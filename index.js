@@ -49,4 +49,10 @@ const isNegative = (num) => {
 const triangleArea = (base, height) => {
     return (base * height) / 2;
 }
-console.log(triangleArea(5, 7));
+
+const betweenTwentyAndFourty = (num) => {
+    if (num <= 20 || num >= 40) {
+        return false;
+    } 
+    return true;
+}
