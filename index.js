@@ -26,4 +26,7 @@ const untilNum = (num) => {
         console.log(i);
     }
 };
-untilNum(78)
+
+const multiply = (num1, num2) => {
+    return num1 * num2;
+}
