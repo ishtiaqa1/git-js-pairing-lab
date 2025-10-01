@@ -30,3 +30,12 @@ const untilNum = (num) => {
 const multiply = (num1, num2) => {
     return num1 * num2;
 }
+
+const add = (num1, num2) => {
+    if (num1 === num2) {
+        return (num1 + num2) * 3;
+    }
+    return (num1 + num2);
+};
+console.log(add(2, 4));
+console.log(add(5, 5));
