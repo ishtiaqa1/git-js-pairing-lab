@@ -37,5 +37,11 @@ const add = (num1, num2) => {
     }
     return (num1 + num2);
 };
-console.log(add(2, 4));
-console.log(add(5, 5));
+
+const isNegative = (num) => {
+    if (num < 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
