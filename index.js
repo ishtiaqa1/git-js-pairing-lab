@@ -53,6 +53,17 @@ const triangleArea = (base, height) => {
 const betweenTwentyAndFourty = (num) => {
     if (num <= 20 || num >= 40) {
         return false;
-    } 
+    }
     return true;
 }
+const largest = (num1, num2, num3) => {
+    let arr = [num1, num2, num3];
+    let max = num1
+    for (let i = 0; i <= arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    return max;
+}
+console.log(largest((4, 6, 8)))
