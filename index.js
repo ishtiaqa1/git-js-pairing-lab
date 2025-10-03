@@ -104,7 +104,26 @@ const switchLetters = (string) => {
         return string;
     }
     let first = string[0];
-    let middle = string.slice(1,-1);
+    let middle = string.slice(1, -1);
     let last = string.slice(-1);
     return first + middle + last;
+}
+
+const changeString = (string) => {
+    let word = ""
+    for (let i = 0; i < string.length; i++) {
+        let cur = ""
+        if (string.charCodeAt(i) === 90) {
+            cur = String.fromCharCode(65)
+            word += cur
+        } else if (string.charCodeAt(i) === 122) {
+            cur = String.fromCharCode(97)
+            word += cur
+        } else {
+            cur = String.fromCharCode(string.charCodeAt(i) + 1)
+            word += cur
+        }
+    }
+    console.log(word)
+    return word;
 }
