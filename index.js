@@ -81,3 +81,13 @@ const isLeapYear = (year) => {
     }
     return false
 }
+
+const getExtension = (file) => {
+    let string = '';
+    const extension = file.lastIndexOf('.');
+    for (let i = extension; i < file.length; i++) {
+        string += file[i];
+    }
+    return string;
+}
+
