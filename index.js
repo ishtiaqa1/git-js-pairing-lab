@@ -91,3 +91,10 @@ const getExtension = (file) => {
     return string;
 }
 
+const absoluteNineteen = (num1) => {
+    const difference = Math.abs(num1 - 19)
+    if (num1 > 19) {
+        return difference * 3;
+    }
+    return difference
+}
