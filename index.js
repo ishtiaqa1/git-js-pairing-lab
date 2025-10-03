@@ -98,3 +98,13 @@ const absoluteNineteen = (num1) => {
     }
     return difference
 }
+
+const switchLetters = (string) => {
+    if (string.length < 2) {
+        return string;
+    }
+    let first = string[0];
+    let middle = string.slice(1,-1);
+    let last = string.slice(-1);
+    return first + middle + last;
+}
