@@ -66,4 +66,11 @@ const largest = (num1, num2, num3) => {
     }
     return max;
 }
-console.log(largest((4, 6, 8)))
+
+const printTime = () => {
+    const date = new Date();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+    console.log(`${hours}:${minutes}:${seconds}`);
+}
